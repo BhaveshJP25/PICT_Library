@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "675348668111",
+    "firebase_url": "https://pict-library.firebaseio.com",
+    "project_id": "pict-library",
+    "storage_bucket": "pict-library.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675348668111:android:586e6c54226b278ea5e1ba",
+        "android_client_info": {
+          "package_name": "bhaveshparakh.pictlibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675348668111-fob240ia8fmmotpkvgq0n1ti0920f82t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9eAuz3I8GiX9G-XTmmyBoJhXQJTez5nM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675348668111-fob240ia8fmmotpkvgq0n1ti0920f82t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
