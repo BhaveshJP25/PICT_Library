@@ -4,7 +4,6 @@ import 'package:pict_library/services/auth.dart';
 import 'package:pict_library/services/note.dart';
 import 'package:http/http.dart' as http;
 
-
 class Home extends StatefulWidget {
 
   @override
@@ -54,15 +53,7 @@ class _HomePageState extends State<Home> {
               centerTitle: true,
 
               elevation: 0.0,
-              actions: <Widget>[
-                FlatButton.icon(
-                    icon: Icon(Icons.person),
-                    onPressed: () async {
-                      await _auth.signout();
-                    },
-                    label: Text('Log Out')
-                )
-              ],
+
               bottom: TabBar(
                 tabs: <Widget>[
                   Tab(icon: Icon(Icons.book)),
@@ -108,6 +99,41 @@ class _HomePageState extends State<Home> {
                 Icon(Icons.archive),
                 Icon(Icons.archive),
               ],
+            ),
+            drawer: Drawer(
+              child: ListView(
+                padding: EdgeInsets.zero,
+                children: <Widget>[
+                  DrawerHeader(
+                    child: Text('My Library'),
+                    decoration: BoxDecoration(color: Colors.blue[200]),
+                  ),
+                  ListTile(
+                    title: Text('Settings'),
+                    onTap: (){
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: Text('About'),
+                    onTap: (){
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: Text('Developers'),
+                    onTap: (){
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: Text('Log Out'),
+                    onTap: () async{
+                      await _auth.signout();
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
         )
