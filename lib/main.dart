@@ -5,6 +5,7 @@ import 'package:pict_library/services/auth.dart';
 import 'package:provider/provider.dart';
 import 'package:animated_splash/animated_splash.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
+import 'package:pict_library/api/api.dart';
 
 void main() => runApp(MyApp());
 
